@@ -33,7 +33,7 @@ Cognitive Architectures, Multiagent Systems
 
 ## Publications 
 ::: {#refs}
-:::  <!-- Pandoc fills the above with the bibliography -->
+:::
 
 ## Teaching
 **Instructor** — Tulane University (Fall 2018)  
