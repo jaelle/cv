@@ -3876,7 +3876,7 @@
     subsequent-author-substitute="———">
     <sort>
       <key variable="issued" sort="descending"/>
-      <key macro="author"/>
+      <key macro="author-sort"/>
       <key variable="title"/>
     </sort>
     <layout suffix=".">
