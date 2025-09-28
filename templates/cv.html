@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  $if(title)$
+  <title>$title$</title>
+  $endif$
+  $for(css)$
+  <link rel="stylesheet" href="$css$" />
+  $endfor$
+  $for(header-includes)$
+  $header-includes$
+  $endfor$
+</head>
+<body>
+  <div class="cv-wrapper">
+  <header class="cv-header">
+    $if(title)$
+    <h1 class="cv-title">$title$</h1>
+    $endif$
+    $if(site_url)$
+    <p class="cv-site"><a href="$site_url$">$site_url$</a></p>
+    $endif$
+  </header>
+  <main class="cv-content">
+  $body$
+  </main>
+  </div>
+  $for(include-after)$
+  $include-after$
+  $endfor$
+</body>
+</html>

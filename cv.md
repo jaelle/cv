@@ -1,5 +1,6 @@
 ---
 title: "Jaelle Scheuerman — CV"
+site_url: https://www.linkedin.com/in/jaelle
 bibliography: publications.bib
 csl: csl/chicago-author-date-date-desc.csl           
 nocite: |
@@ -7,9 +8,6 @@ nocite: |
 reference-section-title: "Publications"
 link-citations: true
 ---
-
-# Jaelle Scheuerman
-[www.linkedin.com/in/jaelle](https://www.linkedin.com/in/jaelle)  
 
 ## Education
 **Ph.D., Computer Science** — Tulane University (2015–2020)  

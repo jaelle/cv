@@ -34,14 +34,17 @@ jobs:
             --citeproc \
             --bibliography=publications.bib \
             --csl=csl/chicago-author-date-date-desc.csl \
+            --template=templates/cv.html \
+            --css=cv.css \
             --output docs/index.html
+          cp css/cv.css docs/cv.css
 
       - name: Commit rendered HTML
         run: |
           if [[ -n "$(git status --short docs/index.html docs/.nojekyll)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add docs/index.html docs/.nojekyll
+            git add docs/index.html docs/cv.css docs/.nojekyll
             git commit -m "chore: update CV build [skip ci]"
             git push
           fi

@@ -7,6 +7,7 @@ Publish a single-source CV website from Markdown (`cv.md`) and a BibTeX file (`p
 - A valid `docs/index.html` is generated on every push to `main`.
 - CV content comes from `cv.md` (Markdown) and publications from `publications.bib`.
 - Citations render using the Chicago Author-Date style (`csl/chicago-author-date-date-desc.csl`).
+- Custom HTML template (`templates/cv.html`) and CSS (`css/cv.css`) shape the rendered page.
 - No external build steps required by the human beyond pushing commits.
 
 ## Scope / Non-Goals
@@ -18,6 +19,8 @@ Publish a single-source CV website from Markdown (`cv.md`) and a BibTeX file (`p
   - `cv.md` (Markdown with citation keys like `[@doe2024coolpaper]`)
   - `publications.bib` (BibTeX entries)
   - `csl/chicago-author-date-date-desc.csl` (installed by default)
+  - `templates/cv.html` (Pandoc HTML template; optional variables like `site_url`)
+  - `css/cv.css` (stylesheet copied alongside the output)
 - Outputs:
   - `docs/index.html` (standalone HTML for GitHub Pages)
 
@@ -37,4 +40,12 @@ Publish a single-source CV website from Markdown (`cv.md`) and a BibTeX file (`p
     --citeproc \
     --bibliography=publications.bib \
     --csl=csl/chicago-author-date-date-desc.csl \
+    --template=templates/cv.html \
+    --css=cv.css \
     --output docs/index.html
+  cp css/cv.css docs/
+
+## Customizing the Template
+- Edit `templates/cv.html` to adjust layout or add new metadata-powered sections (e.g., `$if(site_url)$`).
+- Update `css/cv.css` for typography and spacing; the workflow copies it to `docs/cv.css` on every build.
+- Define additional metadata in the `cv.md` front matter (such as `site_url`) and reference it inside the template.
