@@ -1,5 +1,5 @@
 ---
-title: "Jaelle Scheuerman — CV"
+title: "Jaelle Scheuerman"
 site_url: https://www.linkedin.com/in/jaelle
 bibliography: publications.bib
 csl: csl/chicago-author-date-date-desc.csl           
