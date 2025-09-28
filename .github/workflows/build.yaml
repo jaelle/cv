@@ -25,20 +25,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y pandoc
 
-      - name: Setup Python and pypandoc
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-      - run: pip install pypandoc
-
       - name: Render CV → docs/index.html
         run: |
-          if [ -f "csl/ieee.csl" ]; then CSL="--csl=csl/ieee.csl"; else CSL=""; fi
           pandoc cv.md \
             --from markdown \
             --to html5 \
             --standalone \
-            --metadata title="CV" \
             --citeproc \
             --bibliography=publications.bib \
             --csl=csl/chicago-author-date-date-desc.csl \

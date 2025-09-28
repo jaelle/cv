@@ -6,7 +6,7 @@ Publish a single-source CV website from Markdown (`cv.md`) and a BibTeX file (`p
 ## Success Criteria
 - A valid `docs/index.html` is generated on every push to `main`.
 - CV content comes from `cv.md` (Markdown) and publications from `publications.bib`.
-- Citations render using a CSL style (default: `csl/ieee.csl`).
+- Citations render using the Chicago Author-Date style (`csl/chicago-author-date-date-desc.csl`).
 - No external build steps required by the human beyond pushing commits.
 
 ## Scope / Non-Goals
@@ -17,13 +17,13 @@ Publish a single-source CV website from Markdown (`cv.md`) and a BibTeX file (`p
 - Inputs:
   - `cv.md` (Markdown with citation keys like `[@doe2024coolpaper]`)
   - `publications.bib` (BibTeX entries)
-  - `csl/<style>.csl` (optional; defaults to `ieee.csl` if present)
+  - `csl/chicago-author-date-date-desc.csl` (installed by default)
 - Outputs:
   - `docs/index.html` (standalone HTML for GitHub Pages)
 
 ## Constraints
 - Keep build under ~2 minutes on GitHub-hosted runners.
-- Avoid dependencies beyond `pandoc` and `pypandoc` (and `citeproc` built-in).
+- Avoid dependencies beyond stock `pandoc` (with built-in citeproc).
 - Pages configured to serve from `/docs`. Ensure `docs/.nojekyll` exists.
 
 ## Local Build (optional)
@@ -34,8 +34,7 @@ Publish a single-source CV website from Markdown (`cv.md`) and a BibTeX file (`p
     --from markdown \
     --to html5 \
     --standalone \
-    --metadata title="Your Name – CV" \
     --citeproc \
     --bibliography=publications.bib \
-    --csl=csl/ieee.csl \
+    --csl=csl/chicago-author-date-date-desc.csl \
     --output docs/index.html
