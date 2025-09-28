@@ -39,7 +39,7 @@ body {
   opacity: 0.75;
 }
 
-.cv-content h2 {
+.cv-content h2, #bibliography {
   margin-top: 2.5rem;
   font-size: 1.4rem;
   border-bottom: 1px solid currentColor;
@@ -82,15 +82,15 @@ body {
 .csl-entry {
   /* Style as bulletted list item */
   list-style-type: none;
-  padding-left: 1em;
-  text-indent: -1em;
+  padding-left: 0.25em;
+  text-indent: -0.25em;
   
 }
 
 .csl-entry::before {
   content: "•";
   display: inline-block;
-  width: 1em;
+  width: 0.25em;
 }
 
 @media print {

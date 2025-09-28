@@ -34,7 +34,7 @@ Publish a single-source CV website from Markdown (`cv.md`) and a BibTeX file (`p
 - Run:  
   ```bash
   pandoc cv.md \
-    --from markdown \
+    --from markdown+fenced_divs \
     --to html5 \
     --standalone \
     --citeproc \

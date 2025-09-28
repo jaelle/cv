@@ -31,9 +31,6 @@ Cognitive Architectures, Multiagent Systems
 
 **Undergraduate Research Assistant** — South Dakota School of Mines & Technology (2008–2010)
 
-## Publications & Presentations
-**Selected Publications**  
-*Full list available upon request.*
 ::: {#refs}
 :::  <!-- Pandoc fills this div with the bibliography -->
 
@@ -56,6 +53,7 @@ Cognitive Architectures, Multiagent Systems
 **Web Designer** — Site4Sure.com (2003–2005)
 
 ## Honors & Awards
+- Alan Berman Research Publication Awards (2024)
 - Doctoral Consortium Participant, AAMAS (2020)  
 - ACM Future of Computing Academy (2019)  
 - GHC Scholar, Anita Borg Institute (2019, 2017)  

@@ -28,7 +28,7 @@ jobs:
       - name: Render CV → docs/index.html
         run: |
           pandoc cv.md \
-            --from markdown \
+            --from markdown+fenced_divs \
             --to html5 \
             --standalone \
             --citeproc \
