@@ -31,9 +31,9 @@ Cognitive Architectures, Multiagent Systems
 
 **Undergraduate Research Assistant** — South Dakota School of Mines & Technology (2008–2010)
 
-## Publications 
+## Publications
 ::: {#refs}
-:::
+:::  
 
 ## Teaching
 **Instructor** — Tulane University (Fall 2018)  
@@ -47,6 +47,8 @@ Cognitive Architectures, Multiagent Systems
 - Computational Thinking for Work & Play
 
 ## Professional Experience
+**Co-Founder** — AI with Intent (2025–present)
+
 **Manager of Technology Initiatives** — Newcomb College Institute, Tulane University (2010–2015)  
 
 **Web Developer** — Linn Productions (2005–2008)  
@@ -63,9 +65,9 @@ Cognitive Architectures, Multiagent Systems
 - Imagine Cup US Finals, 3rd Place, Software Design (2010)
 
 ## Service & Community Engagement
+- Mentor, Naval Research Enterprise Internship Program (2023,2025)
 - Reviewer, *Frontiers in Physics*, *Behavioral Research Methods*, *Journal of Cognitive Systems Research*  
-- Mentor, More Active Girls in Computing (2012–Present)  
-- Mentor, NREIP Fall Mentorship Program (2023)  
+- Mentor, More Active Girls in Computing (2012–Present) 
 - Local Chair, CHI 2022 Annual Conference  
 - Vice President, New Orleans Women in Technology (2013–2017)  
 - Mentor, Tulane Digital Research Internship Program (2018–2020)  
