@@ -31,7 +31,8 @@ Cognitive Architectures, Multiagent Systems
 
 **Undergraduate Research Assistant** — South Dakota School of Mines & Technology (2008–2010)
 
-::: {.references}
+## Publications 
+::: {#refs}
 :::  <!-- Pandoc fills the above with the bibliography -->
 
 ## Teaching
