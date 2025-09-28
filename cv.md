@@ -1,7 +1,7 @@
 ---
 title: "Jaelle Scheuerman — CV"
 bibliography: publications.bib
-csl: csl/ieee.csl           
+csl: csl/chicago-author-date-date-desc.csl           
 nocite: |
   @*                         # include ALL .bib entries even if not cited
 reference-section-title: "Publications"
