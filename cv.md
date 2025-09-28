@@ -31,8 +31,8 @@ Cognitive Architectures, Multiagent Systems
 
 **Undergraduate Research Assistant** — South Dakota School of Mines & Technology (2008–2010)
 
-::: {#refs}
-:::  <!-- Pandoc fills this div with the bibliography -->
+::: {.references}
+:::  <!-- Pandoc fills the above with the bibliography -->
 
 ## Teaching
 **Instructor** — Tulane University (Fall 2018)  
