@@ -1,32 +1,103 @@
-name: Build CV (Pandoc)
+name: Sync & Publish CV
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, gh-pages ]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  sync-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Ensure docs directory and .nojekyll
-        run: |
-          mkdir -p docs
-          touch docs/.nojekyll
+        with:
+          fetch-depth: 0
 
       - name: Install pandoc
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc
 
-      - name: Render CV → docs/index.html
+      - name: Sync main → gh-pages and publish
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Ensure gh-pages branch exists locally
+          if git ls-remote --exit-code origin gh-pages; then
+            git fetch origin gh-pages:gh-pages
+          elif git show-ref --verify --quiet refs/heads/gh-pages; then
+            echo "Using existing local gh-pages branch"
+          else
+            git branch gh-pages
+          fi
+
+          # Prepare worktree for gh-pages
+          git worktree add gh-pages-worktree gh-pages
+
+          # Preserve personalized sources (if present)
+          cp -f gh-pages-worktree/cv.md /tmp/cv.md || true
+          cp -f gh-pages-worktree/publications.bib /tmp/publications.bib || true
+
+          pushd gh-pages-worktree
+
+          git fetch origin main
+
+          set +e
+          git merge --no-commit --no-ff origin/main
+          MERGE_STATUS=$?
+          set -e
+
+          if [ $MERGE_STATUS -ne 0 ]; then
+            CONFLICTS=$(git status --short | awk '/^UU/ {print $2}')
+            REMAINING_CONFLICTS=
+            for file in $CONFLICTS; do
+              if [ "$file" = "cv.md" ] || [ "$file" = "publications.bib" ]; then
+                git checkout --ours -- "$file"
+                git add "$file"
+              else
+                if [ -z "$REMAINING_CONFLICTS" ]; then
+                  REMAINING_CONFLICTS=$file
+                else
+                  REMAINING_CONFLICTS="$REMAINING_CONFLICTS $file"
+                fi
+              fi
+            done
+
+            if [ -n "$REMAINING_CONFLICTS" ]; then
+              git merge --abort || true
+              popd
+              git worktree remove gh-pages-worktree --force
+              echo "::error::Merge conflict syncing main→gh-pages: $REMAINING_CONFLICTS. Resolve manually." >&2
+              exit 1
+            fi
+          fi
+
+          # Restore personalized sources if we saved them
+          if [ -f /tmp/cv.md ]; then
+            cp /tmp/cv.md cv.md
+          fi
+          if [ -f /tmp/publications.bib ]; then
+            cp /tmp/publications.bib publications.bib
+          fi
+          if [ -f cv.md ]; then
+            git add cv.md
+          fi
+          if [ -f publications.bib ]; then
+            git add publications.bib
+          fi
+
+          # Render personalized CV at branch root
+          touch .nojekyll
           pandoc cv.md \
             --from markdown+fenced_divs \
             --to html5 \
@@ -36,15 +107,50 @@ jobs:
             --csl=csl/chicago-author-date-date-desc.csl \
             --template=templates/cv.html \
             --css=cv.css \
-            --output docs/index.html
-          cp css/cv.css docs/cv.css
+            --lua-filter=filters/refs-list.lua \
+            --output index.html
+          cp css/cv.css ./cv.css
 
-      - name: Commit rendered HTML
+          git add index.html cv.css .nojekyll
+
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "chore: sync main to gh-pages and publish" || true
+            git push origin HEAD:gh-pages
+          fi
+
+          popd
+          git worktree remove gh-pages-worktree --force
+
+      - name: Publish personalized CV (gh-pages)
+        if: github.ref == 'refs/heads/gh-pages'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [[ -n "$(git status --short docs/index.html docs/.nojekyll)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add docs/index.html docs/cv.css docs/.nojekyll
-            git commit -m "chore: update CV build [skip ci]"
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          touch .nojekyll
+          pandoc cv.md \
+            --from markdown+fenced_divs \
+            --to html5 \
+            --standalone \
+            --citeproc \
+            --bibliography=publications.bib \
+            --csl=csl/chicago-author-date-date-desc.csl \
+            --template=templates/cv.html \
+            --css=cv.css \
+            --lua-filter=filters/refs-list.lua \
+            --output index.html
+          cp css/cv.css cv.css
+
+          git add index.html cv.css .nojekyll
+
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "chore: publish personalized CV" || true
             git push
           fi
