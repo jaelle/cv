@@ -1,74 +1,45 @@
 ---
-title: "Jaelle Scheuerman"
-site_url: https://www.linkedin.com/in/jaelle
+title: "Marie Curie — Curriculum Vitae"
+site_url: https://en.wikipedia.org/wiki/Marie_Curie
 bibliography: publications.bib
-csl: csl/chicago-author-date-date-desc.csl           
+csl: csl/chicago-author-date-date-desc.csl
 nocite: |
-  @*                         # include ALL .bib entries even if not cited
-reference-section-title: "Publications"
+  @*
+reference-section-title: "Selected Publications"
 link-citations: true
 ---
 
 ## Education
-**Ph.D., Computer Science** — Tulane University (2015–2020)  
-*Dissertation: Computational Models of Heuristics and Bias in Human Behavior*  
+**Doctor of Science** — University of Paris (Sorbonne), Paris, France (1903)  
+Thesis: *Recherches sur les substances radioactives*  
 
-**M.S., Human Computer Interaction** — Iowa State University (2012–2014)  
+**Licence in Physics** — University of Paris (Sorbonne), Paris, France (1893)  
 
-**B.S., Computer Science** — South Dakota School of Mines & Technology (2007–2010)
+**Licence in Mathematics** — University of Paris (Sorbonne), Paris, France (1894)  
 
 ## Research Interests
-Artificial Intelligence, Interactive Machine Learning, Human Systems Integration,  
-Human-Machine Teams, Decision Support, Preferences, Cognitive Modeling,  
-Cognitive Architectures, Multiagent Systems
+Radioactivity, Nuclear Physics, Radiochemistry, Materials Science, Medical Applications of Radiation
 
-## Research Experience
-**Computer Scientist** — Center for Geospatial Sciences, Naval Research Lab (2020–Present)  
+## Positions
+**Director**, Curie Laboratory, Radium Institute (1914–1934)  
+**Professor of General Physics**, University of Paris (1906–1934)  
+**Head of Research**, School of Physics and Chemistry of Higher Education (ESPCI) (1897–1906)  
 
-**Research Assistant** — Center for Geospatial Sciences, Naval Research Lab (2016–2020)  
+## Honors & Awards
+- Nobel Prize in Chemistry (1911)  
+- Nobel Prize in Physics (1903)  
+- Davy Medal, Royal Society (1903)  
+- Elliott Cresson Medal, Franklin Institute (1909)  
+- Willhelm Exner Medal (1937, posthumous)  
+- First woman to become a professor at the University of Paris (1906)
 
-**Research Assistant** — Department of Computer Science, Tulane University (2015–2020)  
-
-**Undergraduate Research Assistant** — South Dakota School of Mines & Technology (2008–2010)
+## Service & Leadership
+- Founder and Director, Radium Institute, Paris  
+- Founder, Curie Foundation (now Institut Curie)  
+- Organizer of mobile radiography units (“Petites Curies”) during World War I  
+- Collaborator and mentor to international researchers through the Curie laboratories  
+- Advocate for international scientific cooperation and women in science
 
 ## Publications
 ::: {#refs}
-:::  
-
-## Teaching
-**Instructor** — Tulane University (Fall 2018)  
-- Intro to Computer Science I  
-
-**Teaching Assistant** — Tulane University (2015–2017)  
-- Intro to CS I & II, Intro to Algorithms, Software Studio  
-- Guest lectures in Artificial Intelligence  
-
-**Co-Instructor** — Tulane University (2014, 2015)  
-- Computational Thinking for Work & Play
-
-## Professional Experience
-**Co-Founder** — AI with Intent (2025–present)
-
-**Manager of Technology Initiatives** — Newcomb College Institute, Tulane University (2010–2015)  
-
-**Web Developer** — Linn Productions (2005–2008)  
-
-**Web Designer** — Site4Sure.com (2003–2005)
-
-## Honors & Awards
-- Alan Berman Research Publication Awards (2024)
-- Doctoral Consortium Participant, AAMAS (2020)  
-- ACM Future of Computing Academy (2019)  
-- GHC Scholar, Anita Borg Institute (2019, 2017)  
-- Silicon Bayou 100, Louisiana’s Most Influential Tech People (2019)  
-- Ada Lovelace Award Nominee for Woman of the Year in NOLATech (2017)  
-- Imagine Cup US Finals, 3rd Place, Software Design (2010)
-
-## Service & Community Engagement
-- Mentor, Naval Research Enterprise Internship Program (2023,2025)
-- Reviewer, *Frontiers in Physics*, *Behavioral Research Methods*, *Journal of Cognitive Systems Research*  
-- Mentor, More Active Girls in Computing (2012–Present) 
-- Local Chair, CHI 2022 Annual Conference  
-- Vice President, New Orleans Women in Technology (2013–2017)  
-- Mentor, Tulane Digital Research Internship Program (2018–2020)  
-- Adviser, Tulane Women in Technology (2013–2016)
+:::
