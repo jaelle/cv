@@ -83,7 +83,6 @@ body {
 #refs .csl-entry {
   display: list-item;
   list-style-type: disc;
-  margin-left: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
