@@ -25,7 +25,6 @@ Provide an example single-source CV website from Markdown (`cv.md`) and a BibTeX
   - `csl/chicago-author-date-date-desc.csl` (installed by default)
   - `templates/cv.html` (Pandoc HTML template; optional variables like `site_url`)
   - `css/cv.css` (stylesheet published alongside the output)
-  - `filters/refs-list.lua` (Pandoc Lua filter that turns the bibliography into a semantic list)
 - Outputs:
   - `/index.html` (standalone HTML for GitHub Pages)
   - `/cv.css` (copied stylesheet referenced by `index.html`)
@@ -51,7 +50,6 @@ Provide an example single-source CV website from Markdown (`cv.md`) and a BibTeX
     --csl=csl/chicago-author-date-date-desc.csl \
     --template=templates/cv.html \
     --css=cv.css \
-    --lua-filter=filters/refs-list.lua \
     --output index.html
   cp css/cv.css ./cv.css
   touch .nojekyll
@@ -60,7 +58,6 @@ Provide an example single-source CV website from Markdown (`cv.md`) and a BibTeX
 - Edit `templates/cv.html` to adjust layout or add new metadata-powered sections (e.g., `$if(site_url)$`).
 - Update `css/cv.css` for typography and spacing; the workflow copies it to `cv.css` on every build.
 - Define additional metadata in the `cv.md` front matter (such as `site_url`) and reference it inside the template.
-- Adjust `filters/refs-list.lua` if you need a different bibliography structure (e.g., ordered list instead of bullets).
 
 ## Maintaining `/README.md`
 - Ensure that `/README.md` contains everything needed to fork and personalize the CV (branch strategy, workflow overview, customization knobs).

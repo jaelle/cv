@@ -107,7 +107,6 @@ jobs:
             --csl=csl/chicago-author-date-date-desc.csl \
             --template=templates/cv.html \
             --css=cv.css \
-            --lua-filter=filters/refs-list.lua \
             --output index.html
           cp css/cv.css ./cv.css
 
@@ -142,7 +141,6 @@ jobs:
             --csl=csl/chicago-author-date-date-desc.csl \
             --template=templates/cv.html \
             --css=cv.css \
-            --lua-filter=filters/refs-list.lua \
             --output index.html
           cp css/cv.css cv.css
 
