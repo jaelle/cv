@@ -103,19 +103,6 @@ body {
   font-style: italic;
 }
 
-.csl-entry {
-  /* Style as bulletted list item */
-  list-style-type: none;
-  padding-left: 0.25em;
-  text-indent: -0.25em;
-  
-}
-
-.csl-entry::before {
-  content: "•";
-  display: inline-block;
-  width: 0.25em;
-}
 
 @media print {
   body {
