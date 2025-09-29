@@ -89,12 +89,7 @@ jobs:
           if [ -f /tmp/publications.bib ]; then
             cp /tmp/publications.bib publications.bib
           fi
-          if [ -f cv.md ]; then
-            git add cv.md
-          fi
-          if [ -f publications.bib ]; then
-            git add publications.bib
-          fi
+          git add cv.md publications.bib || true
 
           # Render personalized CV at branch root
           touch .nojekyll
@@ -104,11 +99,11 @@ jobs:
             --standalone \
             --citeproc \
             --bibliography=publications.bib \
-            --csl=csl/chicago-author-date-date-desc.csl \
-            --template=templates/cv.html \
+            --csl=../csl/chicago-author-date-date-desc.csl \
+            --template=../templates/cv.html \
             --css=cv.css \
             --output index.html
-          cp css/cv.css ./cv.css
+          cp ../css/cv.css ./cv.css
 
           git add index.html cv.css .nojekyll
 
