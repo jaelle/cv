@@ -31,6 +31,7 @@ Provide an example single-source CV website from Markdown (`cv.md`) and a BibTeX
 ## Constraints
 - Keep build under ~2 minutes on GitHub-hosted runners.
 - Avoid dependencies beyond stock `pandoc` (with built-in citeproc).
+- Treat custom Lua filters as out of scope for this project.
 - Pages configured to serve from a gh-pages branch in the `/` directory. Ensure `/.nojekyll` exists.
 
 ## Local Build (optional)
