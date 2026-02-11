@@ -31,7 +31,7 @@ Cognitive Architectures, Multiagent Systems
 
 **Undergraduate Research Assistant** — South Dakota School of Mines & Technology (2008–2010)
 
-## Publications
+## Selected Publications
 ::: {#refs}
 :::  
 
@@ -47,7 +47,7 @@ Cognitive Architectures, Multiagent Systems
 - Computational Thinking for Work & Play
 
 ## Professional Experience
-**Co-Founder** — AI with Intent (2025–present)
+**Co-Founder** — Train with Intent (2025–present)
 
 **Manager of Technology Initiatives** — Newcomb College Institute, Tulane University (2010–2015)  
 
