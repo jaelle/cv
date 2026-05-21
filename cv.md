@@ -33,7 +33,7 @@ Computer Scientist and educator with 15+ years of experience and a deep passion 
 
 ## Teaching Experience
 
-**Tulane University**
+### Tulane University
 - Instructor for Intro to Computer Science (Fall 2018)
 - Co-Instructor for Computational Thinking for Work & Play (2014, 2015)
 - Teaching Assistant for Intro to CS I & II, Intro to Algorithms, Software Studio (2015-2017)  
