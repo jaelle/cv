@@ -10,7 +10,7 @@ link-citations: true
 ---
 
 ## Professional Summary
-Computer Scientist and educator with 15+ years of experience and a deep passion for making emerging technologies accessible to all. From my M.S. work in developing educational technology for K-5, to my Ph.D. research into heuristics and bias in decision making (Tulane, 2020), I've dedicated my career to bridging gaps between complex technology and real-world understanding. I specialize in Human-AI Collaboration, Interactive Machine Learning, Human-Computer Interaction, and helping interdisciplinary teams educate and enable communities to critically engage with and deploy technical solutions with intention.
+Computer Scientist and educator with 15+ years of experience and a deep passion for making emerging technologies accessible to all. From my M.S. work in developing educational technology for K-5, to my Ph.D. research into heuristics and bias in decision making (Tulane, 2020), I've dedicated my career to bridging gaps between complex technology and real-world understanding. I specialize in Human-AI Collaboration, Interactive Machine Learning, Human-Computer Interaction, and helping interdisciplinary teams enable their communities to critically engage with and deploy technical solutions with intention.
 
 ## Education
 **Ph.D., Computer Science** — Tulane University (2015–2020)  
