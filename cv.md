@@ -9,6 +9,9 @@ reference-section-title: "Publications"
 link-citations: true
 ---
 
+## Professional Summary
+Innovative Computer Scientist with over 15 years experience developing emerging technology solutions for small business, education and government organizations. She specializes in Human-AI collaboration, with expertise in Artificial Intelligence, Human-Computer Interaction, and Interactive Machine Learning. In 2020, she earned a Ph.D. in Computer Science from Tulane University with a focus on computational models of human behavior. Prior to that she received a M.S in Human-Computer Interaction from Iowa State University. Recognized leader in AI research with publications in top-tier conferences and journals, extensive teaching experience, and a commitment to mentoring the next generation of technologists. Passionate about creating AI systems that meaningfully assist people in work, play, and daily life.
+
 ## Education
 **Ph.D., Computer Science** — Tulane University (2015–2020)  
 *Dissertation: Computational Models of Heuristics and Bias in Human Behavior*  
@@ -22,20 +25,17 @@ Artificial Intelligence, Interactive Machine Learning, Human Systems Integration
 Human-Machine Teams, Decision Support, Preferences, Cognitive Modeling,  
 Cognitive Architectures, Multiagent Systems
 
-## Research Experience
-**Computer Scientist** — Center for Geospatial Sciences, Naval Research Lab (2020–Present)  
+## Professional & Research Experience
+**Co-Founder** — Train with Intent (2025–present)
 
-**Research Assistant** — Center for Geospatial Sciences, Naval Research Lab (2016–2020)  
+**Computer Scientist** — Center for Geospatial Sciences, Naval Research Lab (2015-2020)  
 
-**Research Assistant** — Department of Computer Science, Tulane University (2015–2020)  
+**Manager of Technology Initiatives** — Newcomb College Institute, Tulane University (2010–2015)  
 
 **Undergraduate Research Assistant** — South Dakota School of Mines & Technology (2008–2010)
 
-## Selected Publications
-::: {#refs}
-:::  
 
-## Teaching
+## Teaching Experience
 **Instructor** — Tulane University (Fall 2018)  
 - Intro to Computer Science I  
 
@@ -46,14 +46,9 @@ Cognitive Architectures, Multiagent Systems
 **Co-Instructor** — Tulane University (2014, 2015)  
 - Computational Thinking for Work & Play
 
-## Professional Experience
-**Co-Founder** — Train with Intent (2025–present)
-
-**Manager of Technology Initiatives** — Newcomb College Institute, Tulane University (2010–2015)  
-
-**Web Developer** — Linn Productions (2005–2008)  
-
-**Web Designer** — Site4Sure.com (2003–2005)
+## Selected Publications
+::: {#refs}
+:::  
 
 ## Honors & Awards
 - Alan Berman Research Publication Awards (2024)
