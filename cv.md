@@ -10,20 +10,16 @@ link-citations: true
 ---
 
 ## Professional Summary
-Innovative Computer Scientist with over 15 years experience developing emerging technology solutions for small business, education and government organizations. She specializes in Human-AI collaboration, with expertise in Artificial Intelligence, Human-Computer Interaction, and Interactive Machine Learning. In 2020, she earned a Ph.D. in Computer Science from Tulane University with a focus on computational models of human behavior. Prior to that she received a M.S in Human-Computer Interaction from Iowa State University. Recognized leader in AI research with publications in top-tier conferences and journals, extensive teaching experience, and a commitment to mentoring the next generation of technologists. Passionate about creating AI systems that meaningfully assist people in work, play, and daily life.
+Computer Scientist and educator with 15+ years of experience and a deep passion for making emerging technologies accessible to all. From my M.S. work in developing educational technology for K-5, to my Ph.D. research into heuristics and bias in decision making (Tulane, 2020), I've dedicated my career to bridging gaps between complex AI and real-world understanding. I specialize in Human-AI Collaboration, Interactive Machine Learning, Human-Computer Interaction, and helping interdisciplinary teams educate and enable communities to critically engage with and deploy technical solutions with intention.
 
 ## Education
 **Ph.D., Computer Science** — Tulane University (2015–2020)  
 *Dissertation: Computational Models of Heuristics and Bias in Human Behavior*  
 
 **M.S., Human Computer Interaction** — Iowa State University (2012–2014)  
+*Capstone: Computational Thinking Through Games*
 
 **B.S., Computer Science** — South Dakota School of Mines & Technology (2007–2010)
-
-## Research Interests
-Artificial Intelligence, Interactive Machine Learning, Human Systems Integration,  
-Human-Machine Teams, Decision Support, Preferences, Cognitive Modeling,  
-Cognitive Architectures, Multiagent Systems
 
 ## Professional & Research Experience
 **Co-Founder** — Train with Intent (2025–present)
@@ -36,15 +32,11 @@ Cognitive Architectures, Multiagent Systems
 
 
 ## Teaching Experience
-**Instructor** — Tulane University (Fall 2018)  
-- Intro to Computer Science I  
+**Tulane University**
+- Instructor for Intro to Computer Science (Fall 2018)
+- Co-Instructor for Computational Thinking for Work & Play (2014, 2015)
+- Teaching Assistant for Intro to CS I & II, Intro to Algorithms, Software Studio (2015-2017)  
 
-**Teaching Assistant** — Tulane University (2015–2017)  
-- Intro to CS I & II, Intro to Algorithms, Software Studio  
-- Guest lectures in Artificial Intelligence  
-
-**Co-Instructor** — Tulane University (2014, 2015)  
-- Computational Thinking for Work & Play
 
 ## Selected Publications
 ::: {#refs}
@@ -53,7 +45,7 @@ Cognitive Architectures, Multiagent Systems
 ## Honors & Awards
 - Alan Berman Research Publication Awards (2024)
 - Doctoral Consortium Participant, AAMAS (2020)  
-- ACM Future of Computing Academy (2019)  
+- ACM Future of Computing Academy Participant (2019)  
 - GHC Scholar, Anita Borg Institute (2019, 2017)  
 - Silicon Bayou 100, Louisiana’s Most Influential Tech People (2019)  
 - Ada Lovelace Award Nominee for Woman of the Year in NOLATech (2017)  
@@ -62,7 +54,7 @@ Cognitive Architectures, Multiagent Systems
 ## Service & Community Engagement
 - Mentor, Naval Research Enterprise Internship Program (2023,2025)
 - Reviewer, *Frontiers in Physics*, *Behavioral Research Methods*, *Journal of Cognitive Systems Research*  
-- Mentor, More Active Girls in Computing (2012–Present) 
+- Mentor, More Active Girls in Computing (2012–2023) 
 - Local Chair, CHI 2022 Annual Conference  
 - Vice President, New Orleans Women in Technology (2013–2017)  
 - Mentor, Tulane Digital Research Internship Program (2018–2020)  
