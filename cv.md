@@ -24,7 +24,7 @@ Computer Scientist and educator with 15+ years of experience and a deep passion 
 ## Professional & Research Experience
 **Co-Founder** — Train with Intent (2025–present)
 
-**Computer Scientist** — Center for Geospatial Sciences, Naval Research Lab (2015-2020)  
+**Computer Scientist** — Center for Geospatial Sciences, Naval Research Lab (2015–present)  
 
 **Manager of Technology Initiatives** — Newcomb College Institute, Tulane University (2010–2015)  
 
